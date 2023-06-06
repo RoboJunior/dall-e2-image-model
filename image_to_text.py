@@ -8,7 +8,6 @@ import cv2
 
 
 st.set_page_config(page_title='Image-to-text',page_icon="🤖")
-st.set_page_config(layout='wide')
 openai.api_key = st.sidebar.text_input("Please Enter your API key",placeholder='Please visit openai website for apikey',type='password')
 def url_to_image(url):
     resp = urllib.request.urlopen(url)
